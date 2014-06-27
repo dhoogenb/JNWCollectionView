@@ -27,6 +27,23 @@ typedef NS_ENUM(NSInteger, JNWCollectionViewDirection) {
 	JNWCollectionViewDirectionDown
 };
 
+// How to handle dropping items in a drag and drop operation.
+typedef NS_ENUM(NSInteger, JNWCollectionViewDropType) {
+    // No support for drag and drop.
+    JNWCollectionViewDropTypeNone,
+    
+    // The items stay in place, an additional marker is drawn at the drop
+    // location (for example, like a cursor).
+    JNWCollectionViewDropTypeMarker,
+    
+    // The items are displaced and a (possibly empty) placeholder view is drawn
+    // at the drop location.
+    //
+    // Attributes for the placeholder are queried via -layoutAttributesForItemAtIndexPath:.
+    //
+    JNWCollectionViewDropTypeDisplacement,
+};
+
 typedef NS_ENUM(NSInteger, JNWCollectionViewScrollDirection) {
 	JNWCollectionViewScrollDirectionVertical,
 	JNWCollectionViewScrollDirectionHorizontal,
@@ -87,6 +104,16 @@ typedef NS_ENUM(NSInteger, JNWCollectionViewScrollDirection) {
 ///
 /// Default return value is nil.
 - (NSArray *)indexPathsForItemsInRect:(CGRect)rect;
+
+// Subclasses should returns the index path for a drop operation at the specified point, or nil
+// if the layout does not support dropping or no clear index path can be determined.
+- (JNWCollectionViewDropIndexPath *)dropIndexPathAtPoint:(NSPoint)point;
+
+// Returns the attributes of a marker for the drop location if a drag and drop
+// session is in progress and the layout supports markers.
+//
+// The height of the returned frame should be 1.
+- (JNWCollectionViewLayoutAttributes *)layoutAttributesForDropMarker;
 
 /// Subclasses should override this method to return the size of the specified section.
 ///

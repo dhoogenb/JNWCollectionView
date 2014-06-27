@@ -10,6 +10,10 @@
 		8467C6D7171E587F00A1F343 /* JNWCollectionViewReusableViewSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 8467C6D6171E587F00A1F343 /* JNWCollectionViewReusableViewSpec.m */; };
 		8467C6FA171E58F700A1F343 /* libExpecta.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8467C6E0171E589200A1F343 /* libExpecta.a */; };
 		8467C6FB171E58F700A1F343 /* libSpecta.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8467C6EF171E589500A1F343 /* libSpecta.a */; };
+		A3493289195DA2330022B4A7 /* JNWCollectionViewDragContext.h in Headers */ = {isa = PBXBuildFile; fileRef = A3493287195DA2330022B4A7 /* JNWCollectionViewDragContext.h */; };
+		A349328A195DA2330022B4A7 /* JNWCollectionViewDragContext.m in Sources */ = {isa = PBXBuildFile; fileRef = A3493288195DA2330022B4A7 /* JNWCollectionViewDragContext.m */; };
+		A3493293195DA2980022B4A7 /* JNWCollectionViewDropIndexPath.h in Headers */ = {isa = PBXBuildFile; fileRef = A3493291195DA2980022B4A7 /* JNWCollectionViewDropIndexPath.h */; };
+		A3493294195DA2980022B4A7 /* JNWCollectionViewDropIndexPath.m in Sources */ = {isa = PBXBuildFile; fileRef = A3493292195DA2980022B4A7 /* JNWCollectionViewDropIndexPath.m */; };
 		AB0EA369189472A400E28525 /* JNWCollectionViewLayout+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = AB0EA368189472A400E28525 /* JNWCollectionViewLayout+Private.h */; };
 		AB15146F1714C90800871248 /* JNWCollectionViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = AB15146D1714C90800871248 /* JNWCollectionViewLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AB1514701714C90800871248 /* JNWCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = AB15146E1714C90800871248 /* JNWCollectionViewLayout.m */; };
@@ -135,6 +139,10 @@
 		8467C6D8171E589200A1F343 /* Expecta.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Expecta.xcodeproj; path = external/Expecta/Expecta.xcodeproj; sourceTree = SOURCE_ROOT; };
 		8467C6E7171E589500A1F343 /* Specta.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Specta.xcodeproj; path = external/Specta/Specta.xcodeproj; sourceTree = SOURCE_ROOT; };
 		8467C704171E5C9B00A1F343 /* JNWCollectionViewTests-Tests.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "JNWCollectionViewTests-Tests.pch"; path = "JNWCollectionViewTests/JNWCollectionViewTests-Tests.pch"; sourceTree = SOURCE_ROOT; };
+		A3493287195DA2330022B4A7 /* JNWCollectionViewDragContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JNWCollectionViewDragContext.h; sourceTree = SOURCE_ROOT; };
+		A3493288195DA2330022B4A7 /* JNWCollectionViewDragContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JNWCollectionViewDragContext.m; sourceTree = SOURCE_ROOT; };
+		A3493291195DA2980022B4A7 /* JNWCollectionViewDropIndexPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JNWCollectionViewDropIndexPath.h; sourceTree = SOURCE_ROOT; };
+		A3493292195DA2980022B4A7 /* JNWCollectionViewDropIndexPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JNWCollectionViewDropIndexPath.m; sourceTree = SOURCE_ROOT; };
 		AB0EA368189472A400E28525 /* JNWCollectionViewLayout+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "JNWCollectionViewLayout+Private.h"; path = "JNWCollectionView/JNWCollectionViewLayout+Private.h"; sourceTree = SOURCE_ROOT; };
 		AB15146D1714C90800871248 /* JNWCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JNWCollectionViewLayout.h; path = JNWCollectionView/JNWCollectionViewLayout.h; sourceTree = SOURCE_ROOT; };
 		AB15146E1714C90800871248 /* JNWCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JNWCollectionViewLayout.m; path = JNWCollectionView/JNWCollectionViewLayout.m; sourceTree = SOURCE_ROOT; };
@@ -328,6 +336,10 @@
 				AB3C71EF170CA8D3004A91DB /* JNWCollectionViewReusableView.m */,
 				AB3C71F2170CA8D3004A91DB /* NSIndexPath+JNWAdditions.h */,
 				AB3C71F3170CA8D3004A91DB /* NSIndexPath+JNWAdditions.m */,
+				A3493287195DA2330022B4A7 /* JNWCollectionViewDragContext.h */,
+				A3493288195DA2330022B4A7 /* JNWCollectionViewDragContext.m */,
+				A3493291195DA2980022B4A7 /* JNWCollectionViewDropIndexPath.h */,
+				A3493292195DA2980022B4A7 /* JNWCollectionViewDropIndexPath.m */,
 				AB38E37917DEFA1E00D50B3C /* Private */,
 				ABE0A77817C7E22F005F35A8 /* External */,
 				ABB023FB170791D300537A92 /* Supporting Files */,
@@ -384,6 +396,7 @@
 				AB3C71FC170CA8D3004A91DB /* JNWCollectionViewReusableView.h in Headers */,
 				AB1514821715361E00871248 /* JNWCollectionViewGridLayout.h in Headers */,
 				AB1514741714D39600871248 /* JNWCollectionViewListLayout.h in Headers */,
+				A3493293195DA2980022B4A7 /* JNWCollectionViewDropIndexPath.h in Headers */,
 				AB3C7202170CA8D3004A91DB /* NSIndexPath+JNWAdditions.h in Headers */,
 				AB38E38E17DF099A00D50B3C /* JNWClipView.h in Headers */,
 				AB38E39017DF099A00D50B3C /* JNWScrollView.h in Headers */,
@@ -391,6 +404,7 @@
 				ABC05C691807808E00CAED48 /* JNWCollectionView.h in Headers */,
 				AB3C71F7170CA8D3004A91DB /* JNWCollectionView+Private.h in Headers */,
 				AB3C71FB170CA8D3004A91DB /* JNWCollectionViewCell+Private.h in Headers */,
+				A3493289195DA2330022B4A7 /* JNWCollectionViewDragContext.h in Headers */,
 				AB39819D1731A1B50062B2E0 /* JNWCollectionViewReusableView+Private.h in Headers */,
 				AB3C7209170CA8EF004A91DB /* JNWCollectionView-Prefix.pch in Headers */,
 				ABA276B2171D1C4B005C8E56 /* JNWCollectionViewDocumentView.h in Headers */,
@@ -579,6 +593,8 @@
 			files = (
 				AB3C71F5170CA8D3004A91DB /* JNWCollectionViewFramework.m in Sources */,
 				AB3C71F9170CA8D3004A91DB /* JNWCollectionViewCell.m in Sources */,
+				A349328A195DA2330022B4A7 /* JNWCollectionViewDragContext.m in Sources */,
+				A3493294195DA2980022B4A7 /* JNWCollectionViewDropIndexPath.m in Sources */,
 				AB3C71FD170CA8D3004A91DB /* JNWCollectionViewReusableView.m in Sources */,
 				AB3C7203170CA8D3004A91DB /* NSIndexPath+JNWAdditions.m in Sources */,
 				AB38E39117DF099A00D50B3C /* JNWScrollView.m in Sources */,
