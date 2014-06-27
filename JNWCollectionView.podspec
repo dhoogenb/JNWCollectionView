@@ -22,6 +22,7 @@ Pod::Spec.new do |s|
     'JNWCollectionView/JNWCollectionViewListLayout.h',
     'JNWCollectionView/JNWCollectionViewReusableView.h',
     'JNWCollectionView/JNWCollectionViewFramework.h'
+    'JNWCollectionView/JNWCollectionViewDragContext.h'
   
   s.frameworks = 'Cocoa', 'QuartzCore'
   s.dependency 'JNWScrollView'
